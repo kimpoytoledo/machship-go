@@ -24,6 +24,6 @@ func main() {
 	handler := api.NewHandler(usecaseService, l)
 
 	r := gin.Default()
-	r.POST("/github", handler.GetGithubUsers)
+	r.POST("/retrieveUsers", handler.GetGithubUsers)
 	r.Run()
 }

@@ -87,7 +87,7 @@ Before diving in, ensure Docker and Docker Compose are installed:
    Once the services are active, the API can be accessed using the following `curl` command:
 
    ```bash
-   curl --location 'http://localhost:8080/github' \
+   curl --location 'http://localhost:8080/retrieveUsers' \
         --header 'Content-Type: application/json' \
         --data '{
            "usernames" : ["random1111","octocat","kimpoytoledo"]
