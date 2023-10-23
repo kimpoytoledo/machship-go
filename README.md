@@ -12,7 +12,6 @@
   - [Prerequisites](#prerequisites)
   - [Instructions](#instructions)
 - [Advanced Features](#advanced-features)
-- [Future Enhancements](#future-enhancements)
 
 ## Overview
 
@@ -85,17 +84,18 @@ Before diving in, ensure Docker and Docker Compose are installed:
 
 3. **Engage with the API:**
 
-   Once active, the API becomes accessible at:
+   Once the services are active, the API can be accessed using the following `curl` command:
 
-   ```
-  curl --location 'http://localhost:8080/github' \
-         --header 'Content-Type: application/json' \
-         --data '{
-            "usernames" : ["random1111","octocat","kimpoytoledo"]
-         }'
+   ```bash
+   curl --location 'http://localhost:8080/github' \
+        --header 'Content-Type: application/json' \
+        --data '{
+           "usernames" : ["random1111","octocat","kimpoytoledo"]
+        }'
    ```
 
-   Replace `{usernames}` with the name of the desired Github User (e.g., `octocat`). The response will deliver the Github User data and specify the data source—either "Redis Cache" or "GithubAPI".
+   In the provided command, the `usernames` field contains a list of Github usernames you wish to fetch data for. Feel free to replace the example usernames (`"random1111","octocat","kimpoytoledo"`) with your desired Github usernames. The resulting response will provide the Github User data, indicating the data source as either "Redis Cache" or "GithubAPI".
+
 
 4. **Deactivate the Services:**
 
