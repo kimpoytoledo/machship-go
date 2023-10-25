@@ -40,6 +40,7 @@ machship-go/
 │
 ├── core/                     # Core domain logic
 │   ├── entity/               # Entity definitions
+│   ├── port/                 # Interface definitions
 │   └── usecase/              # Core business logic
 │
 ├── util/                     # Utilities (logging, error handling)
